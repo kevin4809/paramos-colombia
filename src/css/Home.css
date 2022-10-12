@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
+ 
+.wallpaper {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../assets/imageHome.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-param h1{
+  font-family: 'EB Garamond', serif;
+    color:  white;
+    font-size: 10vh;
+    text-align: center;
+}
+.title-param h5{
+  font-family: 'EB Garamond', serif;
+    color:  white;
+    font-size: 4vh;
+}
+.title-param h4{
+  font-family: 'EB Garamond', serif;
+    color:  white;
+    font-size: 4vh;
+    text-align: end;
+}
+
+
+/* ICONS ----------------------------------------------------------------------------------- */
+
+.icons-social-media {
+  font-size: 4rem;
+  display: flex;
+  margin: auto;
+}
+
+.icons-social-media a {
+  color: black;
+}
+
+.circle-icons {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+}
+
+.circle-icons a {
+  text-align: center;
+  position: absolute;
+  bottom: 4%;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+.title-params {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.cardParam img {
+  width: 100%;
+  height: 210px;
+ object-fit: cover;
+  overflow: hidden;
+}
+
+.nameParam {
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+
+.contetCard {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-sizing: 40px;
+  background-color: whitesmoke;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 400px;
+  transition: all 400ms ease;
+}
+
+.contetCard:hover {
+  cursor: pointer;
+  transform: translateY(-3%);
+}
+
+.input-param {
+  margin-top: 40px;
+  padding-bottom: 50px;
+  display: flex; 
+  flex-direction: column;
+}
+
+.search{
+  display: flex;
+
+}
+
+.form-control{
+  position: relative;
+}
+
+.buttoms-next{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.list-locations button{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  transition: all 2s;
+
+}
+
+@media (max-width: 750px) {
+  .wallpaper{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+
+  }
+}

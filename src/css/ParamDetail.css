@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title-param-detail {
+  font-size: 2rem;
+  margin: 50px;
+  text-align: center;
+}
+
+.text-info-param-detail {
+  text-align: center;
+}
+
+.text-info-param-detail {
+  padding: 40px;
+  text-align: justify;
+
+}
+
+.img-param-suggestion {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.cont-suggestion-card {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: whitesmoke;
+  width: 200px;
+  max-height: 300px;
+  transition: all 400ms ease;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.cont-suggestion-card:hover {
+  cursor: pointer;
+  transform: translateY(-3%);
+}
+
+.cont-suggestion-card h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10%;
+}
+
+.cards-suggestion-content {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cards-suggestion-content h1 {
+  margin-bottom: 50px;
+}
+
+.img {
+  margin-top: 20px;
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 4px black solid;
+}
+
+.button-back{
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-back button{
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
