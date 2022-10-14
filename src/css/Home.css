@@ -142,6 +142,25 @@
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
+   width: 100%;
 
+  }
+
+  .title-param h1{
+    font-family: 'EB Garamond', serif;
+      color:  white;
+      font-size: 8vh;
+      text-align: center;
+  }
+  .title-param h5{
+    font-family: 'EB Garamond', serif;
+      color:  white;
+      font-size: 2vh;
+  }
+  .title-param h4{
+    font-family: 'EB Garamond', serif;
+      color:  white;
+      font-size: 2vh;
+      text-align: end;
   }
 }
