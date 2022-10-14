@@ -48,9 +48,11 @@ const Home = () => {
         element.name.toString().toLowerCase().includes(searchTerm.toLowerCase())
       ) {
         return element;
+      } else {
+        return null;
       }
     });
-     setResultSearchParams(resultSearch);
+    setResultSearchParams(resultSearch);
   };
 
   const getIds = (id) => {
