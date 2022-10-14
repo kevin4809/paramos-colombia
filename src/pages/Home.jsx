@@ -50,7 +50,7 @@ const Home = () => {
         return element;
       }
     });
-    setResultSearchParams(resultSearch);
+     setResultSearchParams(resultSearch);
   };
 
   const getIds = (id) => {

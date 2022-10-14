@@ -10,9 +10,6 @@ const ParamDetail = () => {
   const { id } = useParams();
   const [param, setParam] = useState([]);
 
-  const randomParam = infoAllParams?.map((obj) => {
-    return obj;
-  });
   const [paramSuggestion, setParamSuggestion] = useState([]);
 
   useEffect(() => {
@@ -23,14 +20,19 @@ const ParamDetail = () => {
     );
   }, [id]);
 
-  const generateRandomParamsArray = () => {
-    let generateParamSuggestions = [];
+  // const generateRandomParamsArray = () => {
+
+  // };
+
+  useEffect(() => {
+    const randomParam = infoAllParams?.map((obj) => {
+      return obj;
+    });
+    
+    const generateParamSuggestions = [];
     let isRepeat = false;
 
-    let random = randomParam[Math.floor(Math.random() * randomParam.length)];
-    generateParamSuggestions.push(random);
-
-    for (let i = 1; i < 5; i++) {
+    for (let i = 1; i < 6; i++) {
       let random = randomParam[Math.floor(Math.random() * randomParam.length)];
       for (let a = 0; a < generateParamSuggestions.length; a++) {
         if (random?.id === generateParamSuggestions[a]?.id) {
@@ -49,10 +51,6 @@ const ParamDetail = () => {
     }
 
     setParamSuggestion(generateParamSuggestions);
-  };
-
-  useEffect(() => {
-    generateRandomParamsArray();
   }, []);
 
   return (
